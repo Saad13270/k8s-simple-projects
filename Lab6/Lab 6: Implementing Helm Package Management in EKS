@@ -1,0 +1,49 @@
+**Lab 6: Implementing Helm Package Management in EKS**
+**Objective**: Explore Helm as a package manager for Kubernetes applications.
+**Tasks**:
+1. Install Helm in your EKS cluster.
+2. Deploy a chart.
+3. Update and roll back using Helm.
+
+Step#1
+install helm
+Website :
+https://helm.sh/docs/intro/install/
+
+helm version
+
+Step#2
+
+
+cd my-repo
+
+kubectl config current-context
+
+Step#3
+
+helm install my-repo .
+
+Kubectl get pods
+
+ls
+
+Step#4
+vi values.yaml
+
+
+Change cluster-ip to LoadBalancer
+
+helm upgrade my-repo .
+
+kubectl get svc
+
+Step#5
+
+curl external ip.
+
+Or 
+
+ http://127.0.0.1:8080
+
+
+
